@@ -1,0 +1,33 @@
+{
+  "name": "react-torch-cnode",
+  "version": "1.0.0",
+  "description": "Rebuild https://cnodejs.org/ website with react-torch.",
+  "private": true,
+  "scripts": {
+    "dev": "torch dev",
+    "build": "torch build",
+    "start": "torch start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tqma113/react-torch-cnode.git"
+  },
+  "keywords": [
+    "react-torch",
+    "cnode"
+  ],
+  "author": "Ma Tianqi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tqma113/react-torch-cnode/issues"
+  },
+  "homepage": "https://github.com/tqma113/react-torch-cnode#readme",
+  "dependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-torch": "^1.1.1",
+    "typescript": "^3.9.3"
+  }
+}
