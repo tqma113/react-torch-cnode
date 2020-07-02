@@ -1,10 +1,10 @@
 export default [
   {
     path: '/',
-    page: () => import('./home')
+    page: () => import('./pages/home')
   },
   {
     path: '/about',
-    page: () => import('./about')
+    page: () => import('./pages/about')
   }
 ]

@@ -7,6 +7,10 @@ export const attachCss: Mdlw = (app, server) => {
         {
           type: 'link',
           href: '/static/css/main.css'
+        },
+        {
+          type: 'link',
+          href: '/static/css/antd.css'
         }
       ]
     }
