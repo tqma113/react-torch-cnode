@@ -3,6 +3,8 @@ import { Layout } from 'antd'
 import Nav from './Nav'
 import Footer from './Footer'
 
+const { Content } = Layout
+
 
 export default function ({
   children
@@ -10,7 +12,9 @@ export default function ({
   return (
     <Layout>
       <Nav />
-      {children}
+      <Content style={{ padding: '0 50px' }}>
+        {children}
+      </Content>
       <Footer />
     </Layout>
   )
