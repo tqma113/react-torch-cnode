@@ -13,6 +13,7 @@ export default createPage((history, context) => {
 
   const view = () => {
     const cookie = useCookie()
+
     useEffect(() => {
       console.log('a')
       const accessToken = cookie.get('accessToken')
@@ -20,6 +21,7 @@ export default createPage((history, context) => {
         getUser(info.loginname).then(console.log)
       })
     })
+
     return (
       <Layout>
         <Typography>

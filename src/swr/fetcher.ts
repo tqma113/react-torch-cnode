@@ -12,7 +12,9 @@ const fetcher = async (input: RequestInfo, init?: RequestInit | undefined): Prom
     mode: 'cors'
   }
 
-  return fetch(input, init).then(res => res.json())
+  return fetch(input, init).then(res => {
+    return res.json()
+  })
 }
 
 export default fetcher

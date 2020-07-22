@@ -1,13 +1,22 @@
 import useSWR from 'swr'
-import post from './post'
+import fetch from './fetcher'
 
 export const useAccessToken = (token: string) => {
-  const postData = {
-    accesstoken: token
-  }
+  const postData = new URLSearchParams(`accesstoken=${token}`)
 
-  const { data, error } = useSWR([`/accesstoken`, postData], ([url, data]) => post(url, data))
-
+  const { data, error } = useSWR(
+    [`/accesstoken`, postData],
+    ([url, data]) => fetch(
+      url,
+      {
+        method: 'post',
+        body: data,
+        headers: {
+          'Context-Type': 'multipart/form-data'
+        }
+      }
+    )
+  )
 
   return {
     user: data,
@@ -17,9 +26,16 @@ export const useAccessToken = (token: string) => {
 }
 
 export const getAccessToken = (token: string) => {
-  const postData = {
-    accessToken: token
-  }
+  const postData = new URLSearchParams(`accesstoken=${token}`)
 
-  return post(`/accesstoken`, postData)
+  return fetch(
+    `/accesstoken`,
+    {
+      method: 'post',
+      body: postData,
+      headers: {
+        'Context-Type': 'multipart/form-data'
+      }
+    }
+  )
 }
