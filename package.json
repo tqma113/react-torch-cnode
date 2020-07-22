@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "torch dev",
     "build": "torch build",
-    "start": "torch start"
+    "start": "torch start",
+    "cm:start": "tsc app.ts"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,7 @@
     "antd": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-torch": "^1.5.11",
+    "react-torch": "^1.5.12",
     "swr": "^0.2.3",
     "typescript": "^3.9.5"
   }

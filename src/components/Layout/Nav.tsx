@@ -1,12 +1,12 @@
 import React from 'react'
 import { Layout, Menu, Input } from 'antd'
-import { SearchOutlined } from '@ant-design/icons';
+// import { SearchOutlined } from '@ant-design/icons';
 
 const { Header } = Layout
 
-const searchSuffix = (
-  <SearchOutlined />
-);
+// const searchSuffix = (
+//   <SearchOutlined />
+// );
 
 export default function Nav() {
   const handleLogoClick = () => {
@@ -59,7 +59,6 @@ export default function Nav() {
               size="small"
               placeholder=""
               onPressEnter={handleSeach}
-              prefix={searchSuffix}
             />
           </div>
         </div>
