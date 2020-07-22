@@ -30,3 +30,19 @@ export const useTopics = ({
     isError: error
   }
 }
+
+export const getTopics = async ({
+  page,
+  tab,
+  limit,
+  mdrender
+}: TopicsProps) => {
+  const query = {
+    page,
+    tab,
+    limit,
+    mdrender
+  }
+
+  return fetcher(`/topics?${stringify(query)}`)
+}

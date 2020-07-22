@@ -201,7 +201,7 @@ body {
   max-width: 1400px;
   min-width: 960px;
   color: #999;
-  padding: 20px 50px;
+  padding: 20px 0;
   font-size: 13px;
   line-height: 2em
 }

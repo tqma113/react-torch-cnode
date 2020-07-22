@@ -30,7 +30,7 @@
     "antd": "^4.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-torch": "^1.5.4",
+    "react-torch": "^1.5.11",
     "swr": "^0.2.3",
     "typescript": "^3.9.5"
   }

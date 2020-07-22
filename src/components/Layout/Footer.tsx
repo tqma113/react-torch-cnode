@@ -7,7 +7,7 @@ export default function() {
   return (
     <Footer style={{ padding: '0' }}>
       <div id="footer">
-        <div id="footer_main">
+        <div id="footer_main" style={{ maxWidth: 1400, margin: 'auto' }}>
           <div className="links">
             <a className="dark" href="/rss">RSS</a>
             |

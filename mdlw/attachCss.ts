@@ -6,11 +6,13 @@ export const attachCss: Mdlw = (app, server) => {
       styles: [
         {
           type: 'link',
-          href: '/static/css/main.css'
+          href: '/static/css/main.css',
+          preload: true
         },
         {
           type: 'link',
-          href: '/static/css/antd.css'
+          href: '/static/css/antd.css',
+          preload: true
         }
       ]
     }

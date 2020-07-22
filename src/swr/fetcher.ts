@@ -1,6 +1,6 @@
 const API = 'https://cnodejs.org/api/v1'
 
-const fetcher = (input: RequestInfo, init?: RequestInit | undefined): Promise<any> => {
+const fetcher = async (input: RequestInfo, init?: RequestInit | undefined): Promise<any> => {
   if (typeof input === 'string') {
     input = API + input
   } else {
