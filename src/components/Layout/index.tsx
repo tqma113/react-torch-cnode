@@ -12,7 +12,7 @@ export default function ({
   return (
     <Layout>
       <Nav />
-      <Content style={{ padding: '0 50px' }}>
+      <Content style={{ margin: '20px 50px', padding: '24px', background: '#fff' }}>
         {children}
       </Content>
       <Footer />

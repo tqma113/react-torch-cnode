@@ -15,6 +15,7 @@ export default function Nav() {
 
   const handleSeach = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const search = event.currentTarget.value
+    document.location.href = `www.google.com?search=${search}`
   }
 
   const handleHomeClick = () => {
